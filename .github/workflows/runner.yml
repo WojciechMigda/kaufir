@@ -14,9 +14,13 @@ on:
     - cron: '* 9 * * 2,3'
   workflow_dispatch:
     inputs:
-      parametr:
-        description: 'Parametr'
-        required: false # true
+      year:
+        description: 'Year (YYYY), to use for file naming.'
+        required: false
+        default: ''
+      weekno:
+        description: 'Week number, to use for leaflet download and file naming.'
+        required: false
         default: ''
 
 jobs:
@@ -43,12 +47,7 @@ jobs:
     - name: Install py-pdf-parser
       run: sudo pip3 install py_pdf_parser
 
-    - name: Build
+    - name: Download leaflet
       shell: bash
       run: |
-        weekno=$(date +%U) # or %V
-        echo ${weekno}
-        pdf_url=$(curl -s "https://endpoints.leaflets.schwarz/v3/PL_pl_KDZ_8362_PL${weekno}-LFT/flyer.json?regionCode=8362" | jq -r '.flyer.hiResPdfUrl')
-        echo "${pdf_url}"
-        #"${INPUT_SOURCE_DIR}"/pairs.py | "${INPUT_SOURCE_DIR}"/update.sh
-        echo "TODO"
+        "${INPUT_SOURCE_DIR}"/dl.sh ${{ github.event.inputs.year }} ${{ github.event.inputs.weekno }}
