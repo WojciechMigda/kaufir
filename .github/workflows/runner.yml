@@ -1,0 +1,46 @@
+# Use the hash sign to prefix a comment
+# +---------------- minute (0 - 59)
+# |  +------------- hour (0 - 23)
+# |  |  +---------- day of month (1 - 31)
+# |  |  |  +------- month (1 - 12)
+# |  |  |  |  +---- day of week (0 - 7) (Sunday=0 or 7)
+# |  |  |  |  |
+# *  *  *  *  *  command to be executed
+#--------------------------------------------------------------------------
+
+name: "Information Retrieval"
+on:
+  schedule:
+    - cron: '* 9 * * 2,3'
+  workflow_dispatch:
+    inputs:
+      parametr:
+        description: 'Parametr'
+        required: false # true
+        default: ''
+
+jobs:
+  build:
+    name: Collect weekly leaflet
+    runs-on: ubuntu-latest
+    env:
+        INPUT_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        INPUT_CREATE_README: true
+        INPUT_SOURCE_DIR: scripts ## existing directory inside the repo
+        INPUT_INSTALL_EXTENSIONS: true
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Update apt
+      run: sudo apt-get update -y
+
+    - name: Install pdftotext
+      run: sudo apt install -y poppler-utils
+
+    - name: Install py-pdf-parser
+      run: sudo pip3 install py_pdf_parser
+
+    - name: Build
+      run: |
+        #"${INPUT_SOURCE_DIR}"/pairs.py | "${INPUT_SOURCE_DIR}"/update.sh
+        echo "TODO"
