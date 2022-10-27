@@ -37,10 +37,18 @@ jobs:
     - name: Install pdftotext
       run: sudo apt install -y poppler-utils
 
+    - name: Install jq
+      run: sudo apt install -y jq
+
     - name: Install py-pdf-parser
       run: sudo pip3 install py_pdf_parser
 
     - name: Build
+      shell: bash
       run: |
+        weekno=$(date +%U) # or %V
+        echo ${weekno}
+        pdf_url=$(curl -s "https://endpoints.leaflets.schwarz/v3/PL_pl_KDZ_8362_PL${weekno}-LFT/flyer.json?regionCode=8362" | jq -r '.flyer.hiResPdfUrl')
+        echo "${pdf_url}"
         #"${INPUT_SOURCE_DIR}"/pairs.py | "${INPUT_SOURCE_DIR}"/update.sh
         echo "TODO"
