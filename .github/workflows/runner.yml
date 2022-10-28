@@ -51,3 +51,5 @@ jobs:
       shell: bash
       run: |
         "${INPUT_SOURCE_DIR}"/dl.sh ${{ github.event.inputs.year }} ${{ github.event.inputs.weekno }}
+        "${INPUT_SOURCE_DIR}"/ir.sh ${{ github.event.inputs.year }} ${{ github.event.inputs.weekno }}
+        "${INPUT_SOURCE_DIR}"/commit.sh ${{ github.event.inputs.year }} ${{ github.event.inputs.weekno }}
