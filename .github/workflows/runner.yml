@@ -50,8 +50,8 @@ jobs:
     #- name: Install pdfminer
     #  run: sudo pip3 install pdfminer
 
-    - name: Install pdfquery
-      run: sudo pip3 install pdfquery
+    #- name: Install pdfquery
+    #  run: sudo pip3 install pdfquery
 
     - name: Download leaflet
       shell: bash
