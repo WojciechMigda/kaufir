@@ -12,7 +12,7 @@ mkdir -p pdf
 
 pdf_url=$(curl -s "https://endpoints.leaflets.schwarz/v3/PL_pl_KDZ_8362_PL${WEEK}-LFT/flyer.json?regionCode=8362" | jq -r '.flyer.hiResPdfUrl')
 echo "Downloading ${pdf_url}"
-wget -c --progress=dot:mega "${pdf_url}" -O pdf/Kaufland-${YEAR}-${WEEK}.pdf
+wget --progress=dot:mega "${pdf_url}" -O pdf/Kaufland-${YEAR}-${WEEK}.pdf
 
 
 [ -z "${INPUT_GITHUB_TOKEN}" ] && {
