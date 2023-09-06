@@ -3431,7 +3431,7 @@ pikantne                  tylko             z miodem                            
 150 g                                       300 g opakowanie                                       200 g
 opakowanie                                  (z kartą =100 G 2,16)                                  opakowanie
                                                                     cena
-(=100 G 2,33)                               (bez karty =100 G 3,87) bez karty      11,59           (=100 G 3,75)
+(=100 G 2,33)                               (bez karty =100 G 4,33) bez karty     12,99            (=100 G 3,75)
                                                                     * Cena naliczana przy kasie.
 
 
@@ -3515,11 +3515,8 @@ opakowanie
                                             (=100 G 7,99)
 
                                                                                                   KUP
-                                                                                               1+1
+                                                                                              1+1
                                                                                               GRATIS
-                                                                                            Cena
-                                                                                            naliczana
-                                                                                            przy kasie.
 
 
 
