@@ -1417,7 +1417,7 @@ zapasów. Sprzedaż w ilościach detalicznych. Wszystkie podane ceny wyrażone s
                                                2,99
   200 g                                                                   *
   opakowanie                                                                                              Tylko
-  (przy 2 szt.                                                                                            z kartą
+  (do 2 szt.                                                                                              z kartą
   z kartą =100 G 1,50)                                                                                  Tylko z kartą Kaufland Card
   (cena reg.                            cena bez karty
   bez karty =100 G 3,00)                lub powyżej
@@ -3373,7 +3373,7 @@ CUKRY PUDRY
                                                     200 g                        rodzaje
                                                     opakowanie                   100 g
 
-NA WYBRANE                                          (=100 G 1,50)                opakowanie
+ WYBRANE                                            (=100 G 1,50)                opakowanie
 
 
  ARTYKUŁY
