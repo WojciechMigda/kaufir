@@ -179,8 +179,8 @@ jest naliczany proporcjonalnie na wszystkie produkty objęte promocją.         
 
 
 S2-PL-KW39-LFT-TS_Pano_bezmut_1_L-1020-10                                           Teraz zapłacisz także BLIKIEM
-    TYGODNIOWE                                                                                                                                            25.09
-                                                                                                                                                          XXX
+    TYGODNIOWE                                                                                                                                           25.09
+                                                                                                                                                         XXX
 
              HITY                                                                                                                700
    CENOWE                                                                                                                         ml
@@ -211,7 +211,7 @@ S2-PL-KW39-LFT-TS_Pano_bezmut_1_L-1020-10                                       
                                                                                                                                    średnio nasycona CO2
                                                                                                                                    1,5 l butelka
                                                                                                                                    (przy 6 but. z kartą = 1 l 0,99)
-                                                                                                                                   (cena reg./bez karty = 1 l ,99)
+                                                                                                                                   (cena reg./bez karty = 1 l 1,99)
 
 
 
